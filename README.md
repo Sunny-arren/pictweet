@@ -11,7 +11,7 @@ TECH：：EXPERT短期集中コースのカリキュラム内で最初に作成�
   ＊写真資料_０：  
   ①サインアップ画面  
     https://user-images.githubusercontent.com/56028886/70861364-40ab7c80-1f70-11ea-847e-4d29c9493ac7.png  
-  ②ログイン画面
+  ②ログイン画面  
     https://user-images.githubusercontent.com/56028886/70861385-7c464680-1f70-11ea-802b-33f298be72e3.png  
 ## example user 情報  
   
@@ -61,14 +61,15 @@ TECH：：EXPERT短期集中コースのカリキュラム内で最初に作成�
    ②未ログイン状態：  
      https://user-images.githubusercontent.com/56028886/70861162-6b480600-1f6d-11ea-990e-7cdf5ef66590.png  
 ３)tweets_controller に before_action :move_to_index, except: [:index, :show] と記述し、  
-　非ログイン時に投稿しようとすると、index ページへ飛ぶように設定している。  
+未ログイン時に投稿しようとすると、index ページへ飛ぶように設定している。  
 　（画面上では、そもそも投稿ボタンの設定自体が無い）  
 ## Tweet 関連（コメント投稿機能を含む）   
 １）indexページの投稿写真に表示されるツイート削除ボタンについては、 renderファイルのtweet.html.erb に、  
 <% if user_signed_in? && current_user.id == tweet.user_id %>と記述し、ログイン時、かつ  
-投稿のuser_id が、current_userと一致する投稿にのみ、表示される設定としている。(＊写真資料_２）  
+投稿のuser_id が、current_userと一致する投稿にのみ、表示される設定としている。  
+(＊写真資料_２）  
 ２）投稿した写真右下に表示されているニックネームには、user マイページへ遷移できるリンクが設定されている(＊写真資料_２）  
-　＊写真資料_2：  
+＊写真資料_2：  
   ①ログイン状態：  
     https://user-images.githubusercontent.com/56028886/70861293-39d03a00-1f6f-11ea-8b1c-a17323b207fd.png   
   ②未ログイン状態：   
@@ -84,7 +85,8 @@ TECH：：EXPERT短期集中コースのカリキュラム内で最初に作成�
 　関連するファイルは、javascripts/comment.js。投稿データ（form_tag内のデータ）は、  
 　FormDataオブジェクトに格納。  
 ## User 関連  
-１）ユーザー登録に関するテスト（単体テスト）を実施。factory_botを活用し、以下の内容（一部抜粋）でテストを行う。  
+１）ユーザー登録に関するテスト（単体テスト）を実施。factory_botを活用し、以下の内容（一部抜粋）で  
+テストを行う。  
   1. nicknameとemail、passwordとpassword_confirmationが存在すれば登録できること。  
   2. nicknameが空では登録できないこと。  
   3. passwordが空では登録できないこと。  
