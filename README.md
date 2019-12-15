@@ -1,18 +1,18 @@
 # pictweet README
 # 概要
-TECH：：EXPERT短期集中コースのカリキュラム内で最初に作成した、簡易twitter型ウェブApp。  　
+TECH：：EXPERT短期集中コースのカリキュラム内で最初に作成した、簡易twitter型ウェブApp。  
 簡易ではあるが、MVCモデルに基づいた各種機能を網羅。応用カリキュラムに入ってからは  
 コメント投稿時の非同期通信を追加実装、また、単体テストを実施している。  
-フロントサイドは全て、用意されたものを使用。したがって本件でマークアップは実行していない。  
+フロントサイドは全て用意されたものを使用。したがって本件でマークアップは実行していない。  
 
 ## デプロイ先について
 　URL：  
 　pwd：  
   ＊写真資料_０：  
   ①サインアップ画面  
-   https://user-images.githubusercontent.com/56028886/70861364-40ab7c80-1f70-11ea-847e-4d29c9493ac7.png  
-  ②ログイン画面  
-　　https://user-images.githubusercontent.com/56028886/70861385-7c464680-1f70-11ea-802b-33f298be72e3.png  
+    https://user-images.githubusercontent.com/56028886/70861364-40ab7c80-1f70-11ea-847e-4d29c9493ac7.png  
+  ②ログイン画面
+    https://user-images.githubusercontent.com/56028886/70861385-7c464680-1f70-11ea-802b-33f298be72e3.png  
 ## example user 情報  
   
 ## バージョン情報  
@@ -57,9 +57,9 @@ TECH：：EXPERT短期集中コースのカリキュラム内で最初に作成�
 ログイン時、未ログイン時の表示を分けている（ログインボタンが異なる）（＊写真資料_１）。  
   ＊写真資料_１：  
    ①ログイン状態：  
-  　　https://user-images.githubusercontent.com/56028886/70861069-c7f6f100-1f6c-11ea-8477-d020f2cc8847.png  
+     https://user-images.githubusercontent.com/56028886/70861069-c7f6f100-1f6c-11ea-8477-d020f2cc8847.png  
    ②未ログイン状態：  
-　　　https://user-images.githubusercontent.com/56028886/70861162-6b480600-1f6d-11ea-990e-7cdf5ef66590.png  
+     https://user-images.githubusercontent.com/56028886/70861162-6b480600-1f6d-11ea-990e-7cdf5ef66590.png  
 ３)tweets_controller に before_action :move_to_index, except: [:index, :show] と記述し、  
 　非ログイン時に投稿しようとすると、index ページへ飛ぶように設定している。  
 　（画面上では、そもそも投稿ボタンの設定自体が無い）  
@@ -71,7 +71,7 @@ TECH：：EXPERT短期集中コースのカリキュラム内で最初に作成�
 　＊写真資料_2：  
   ①ログイン状態：  
     https://user-images.githubusercontent.com/56028886/70861293-39d03a00-1f6f-11ea-8b1c-a17323b207fd.png   
-  ②未ログイン状態：  
+  ②未ログイン状態：   
     https://user-images.githubusercontent.com/56028886/70861329-ac411a00-1f6f-11ea-8d64-dc9ff021c97b.png  
 ３）投稿詳細ページ（詳細ボタンをクリックすると遷移）に、コメント投稿機能を設置。  
  ① この実装に合わせて、tweetモデルとcommentモデル（一対多）、及びuserモデルとcommentモデル（一対多）に  
