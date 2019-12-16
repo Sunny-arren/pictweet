@@ -6,7 +6,7 @@ TECH：：EXPERT短期集中コースのカリキュラム内で最初に作成�
 フロントサイドは全て用意されたものを使用。したがって本件でマークアップは実行していない。  
 
 ## デプロイ先について
-　URL：https://pictweet8686.herokuapp.com/    
+URL：https://pictweet8686.herokuapp.com/    
   ＊写真資料_０：  
   ①サインアップ画面  
      https://user-images.githubusercontent.com/56028886/70861364-40ab7c80-1f70-11ea-847e-4d29c9493ac7.png  
