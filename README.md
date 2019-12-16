@@ -13,14 +13,14 @@ TECH：：EXPERT短期集中コースのカリキュラム内で最初に作成�
   ②ログイン画面  
      https://user-images.githubusercontent.com/56028886/70861385-7c464680-1f70-11ea-802b-33f298be72e3.png  
 ## example user 情報  
-  user1:
-    email:abcdf@yahoo.co.jp
-    pwd: 1234567yy
-    nickname: moon
-  user2
-    email:sunlight@gmail.com
-    pwd: 1234567yy
-    nickname: sunny   
+  user1:　　
+    email:abcdf@yahoo.co.jp　　
+    pwd: 1234567yy　　
+    nickname: moon　　
+  user2：　　
+    email:sunlight@gmail.com　　
+    pwd: 1234567yy　　
+    nickname: sunny　　  
 ## バージョン情報  
  Rails 5.2.3  
  ruby 2.5.1  
