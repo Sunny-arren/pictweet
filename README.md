@@ -6,15 +6,21 @@ TECH：：EXPERT短期集中コースのカリキュラム内で最初に作成�
 フロントサイドは全て用意されたものを使用。したがって本件でマークアップは実行していない。  
 
 ## デプロイ先について
-　URL：  
-　pwd：  
+　URL：https://pictweet8686.herokuapp.com/    
   ＊写真資料_０：  
   ①サインアップ画面  
      https://user-images.githubusercontent.com/56028886/70861364-40ab7c80-1f70-11ea-847e-4d29c9493ac7.png  
   ②ログイン画面  
      https://user-images.githubusercontent.com/56028886/70861385-7c464680-1f70-11ea-802b-33f298be72e3.png  
 ## example user 情報  
-  
+  user1:
+    email:abcdf@yahoo.co.jp
+    pwd: 1234567yy
+    nickname: moon
+  user2
+    email:sunlight@gmail.com
+    pwd: 1234567yy
+    nickname: sunny   
 ## バージョン情報  
  Rails 5.2.3  
  ruby 2.5.1  
