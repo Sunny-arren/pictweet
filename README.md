@@ -69,6 +69,14 @@ nickname: sunny  　
 ３)tweets_controller に before_action :move_to_index, except: [:index, :show] と記述し、  
 未ログイン時に投稿しようとすると、index ページへ飛ぶように設定している。  
 　（画面上では、そもそも投稿ボタンの設定自体が無い）  
+4)サインアップ時に必要な、ニックネーム（nickname)の入力を許可する設定について、  
+application_controllerで以下のように記述している。  
+```
+before_action :configure_permitted_parameters, if: :devise_controller?
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:nickname])
+  end
+```
 ## Tweet 関連（コメント投稿機能を含む）   
 １）indexページの投稿写真に表示されるツイート削除ボタンについては、 renderファイルのtweet.html.erb に、  
 <% if user_signed_in? && current_user.id == tweet.user_id %>と記述し、ログイン時、かつ  
